@@ -1,42 +1,57 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.todo-app{
+  width: 55%;
+  margin: auto;
+}
+.todo-app h1{
   text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+form{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+form input{
+  width: 80%;
+  padding: 1rem;
+  outline: 0;
+  border: 3px solid #000;
+  border-radius: 7px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form button{
+  width: 18%;
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  border: 3px solid #000;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-list{
+  margin-top: 3.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo-list li{
+  list-style-type: none;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.card {
-  padding: 2em;
+.todo-list li.active{
+  background-color: rgb(0, 126, 0);
 }
-
-.read-the-docs {
-  color: #888;
+.todo-list li span{
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.todo-list li span:hover{
+  color: rgb(255, 28, 28);
 }
